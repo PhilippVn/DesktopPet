@@ -1,0 +1,122 @@
+{
+
+  "dimensions" : {
+    "width" : 115,
+    "height" : 115
+  },
+
+  "states": [
+    {
+      "description" : "standing",
+      "category" : "default",
+      "transitions" : [
+        "standing",
+        "farting",
+        "looking",
+        "scratching",
+        "waving",
+        "whistling",
+        "going-to-sleep",
+        "sitting-down"
+      ]
+    },
+
+    {
+      "description" : "farting",
+      "category" : "idle",
+      "transitions" : [
+        "standing"
+      ]
+    },
+
+    {
+      "description" : "looking",
+      "category" : "idle",
+      "transitions" : [
+        "standing"
+      ]
+    },
+
+    {
+      "description" : "scratching",
+      "category" : "idle",
+      "transitions" : [
+        "standing"
+      ]
+    },
+
+    {
+      "description" : "waving",
+      "category" : "idle",
+      "transitions" : [
+        "standing"
+      ]
+    },
+
+    {
+      "description" : "whistling",
+      "category" : "idle",
+      "transitions" : [
+        "standing"
+      ]
+    },
+
+    {
+      "description" : "going-to-sleep",
+      "category" : "idle",
+      "transitions" : [
+        "sleeping"
+      ]
+    },
+
+    {
+      "description" : "sleeping",
+      "category" : "idle",
+      "transitions" : [
+        "sleeping", "standing-up-from-sleeping"
+      ]
+    },
+
+    {
+      "description" : "standing-up-from-sleeping",
+      "category" : "idle",
+      "transitions" : [
+        "standing"
+      ]
+    },
+
+    {
+      "description" : "sitting-down",
+      "category" : "idle",
+      "transitions" : [
+        "sitting"
+      ]
+    },
+
+    {
+      "description" : "sitting",
+      "category" : "idle",
+      "transitions" : [
+        "sitting", "standing-up-from-sitting"
+      ]
+    },
+
+    {
+      "description" : "standing-up-from-sitting",
+      "category" : "idle",
+      "transitions" : [
+        "standing"
+      ]
+    },
+
+    {
+      "description" : "die",
+      "category" : "mouseclick",
+      "transitions" : [
+        "standing"
+      ]
+    }
+
+  ]
+
+}
