@@ -34,6 +34,7 @@ public class Window {
             jframe.setSize(width,height);
             jframe.setAlwaysOnTop( true );
             jframe.setBackground(new Color(0, 0, 0, 0));
+            jframe.setFocusableWindowState(false);
 
             Dimension scrnSize = Toolkit.getDefaultToolkit().getScreenSize();
             Rectangle winSize = GraphicsEnvironment.getLocalGraphicsEnvironment().getMaximumWindowBounds();

@@ -73,7 +73,7 @@ public class FSM {
                     }
             }
             try {
-                Thread.sleep(1000);
+                Thread.sleep(800);
             } catch (InterruptedException ignored) {}
         }
     }
