@@ -1,8 +1,11 @@
 # Description
-Fully customizeable,interactive and draggable Desktop Pet sitting on your taskbar to keep you company :)
+Fully customizeable, interactive and draggable Desktop Pet sitting on your taskbar to keep you company :)
+
+# Plug and Play
+Create your very own Desktop Pet without the need to ever touch code. The Engine is designed in a very generic way that allows you to copy paste your animation frames and after short configuration you are all set.
 
 # How to run
-1. Clone the repository and build the jar with `gradlew jar`
+1. Clone the repository and build the jar with `gradlew jar` or download the prebuilt jar from the release tab
 2. Place the built jar in the root of the repository
 3. Run the jar file using `javaw -jar <jar file>` (if u want to have a console for debugging purposes use `java -jar` instead)
 
