@@ -59,7 +59,7 @@ public class Animation {
             frame.getContentPane().add(new JLabel(icon));
             frame.setVisible(true);
             try {
-                Thread.sleep(100);
+                Thread.sleep(50);
             } catch (InterruptedException ignored) {
             }
         }
