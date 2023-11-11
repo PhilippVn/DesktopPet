@@ -7,3 +7,5 @@ The description of the state also depicts the name of the folder containing your
 You can also change the window size to fit your Desktop Pet.
 
 The mouseclick category is a special category that must only consist of exactly one state that is switched to whenever you click your Desktop Pet.
+
+Be sure to also change the window size in the config.json to fit your frames (otherwise the window will not show)
