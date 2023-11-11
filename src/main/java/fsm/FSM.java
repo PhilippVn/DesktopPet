@@ -63,7 +63,15 @@ public class FSM {
     public void run() {
         currentAnimation.playAnimation();
         while(true){
-            if (currentState.canTransition()) {
+            if(window.wasClicked()){
+                // special case
+                currentState = categoryMap.get(StateCategory.MOUSECLICK).get(0);
+                currentAnimation = animationMap.get(currentState);
+                System.out.println("Switched State: " + currentState);
+                currentAnimation.playAnimation();
+                window.resetClicked();
+            }
+            else if (currentState.canTransition()) {
                     State nextState = currentState.transition();
                     if(currentState != nextState){
                         currentState = nextState;
@@ -72,9 +80,11 @@ public class FSM {
                         currentAnimation.playAnimation();
                     }
             }
-            try {
-                Thread.sleep(800);
-            } catch (InterruptedException ignored) {}
+            if(!window.wasClicked()){ // only sleep if there was no click to make it more responsive
+                try {
+                    Thread.sleep(800);
+                } catch (InterruptedException ignored) {}
+            }
         }
     }
 }
